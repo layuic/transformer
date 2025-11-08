@@ -183,26 +183,5 @@ python translate.py --checkpoint checkpoints/best_model.pt --text "Hello, how ar
    - 消融对比：`results/ablation/ablation_comparison.png`
    - 结果表格：`results/ablation/ablation_summary.csv`
 
-### 可复现性保证
-
-- **随机种子**: 所有实验默认使用 `--seed 42`，确保结果可复现
-- **环境变量**: 脚本中设置 `PYTHONHASHSEED=42` 进一步保证可复现性
-- **固定超参数**: 所有超参数在命令行中明确指定，避免配置文件差异
-
-### 预期运行时间（参考）
-
-- **Baseline 训练**（10 epochs）:
-  - CPU: ~2-4 小时
-  - GPU (4GB): ~15-30 分钟
-- **完整消融实验**（9 个配置，每个 10 epochs）:
-  - CPU: ~18-36 小时
-  - GPU (4GB): ~2-5 小时
-
-## 8) 说明
-
-- 默认随机种子：`--seed 42`（可复现）
-- CPU 可跑通，小显存/无 GPU 建议用 `--small` 快速验证
-- 所有实验结果保存在 `results/` 目录，可直接用于报告生成
-
 
 
