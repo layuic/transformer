@@ -1,0 +1,164 @@
+[
+  {
+    "experiment": "baseline",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 3,
+      "num_decoder_layers": 3,
+      "num_heads": 4,
+      "d_ff": 1024,
+      "dropout": 0.1,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.0005482584983838024,
+    "final_val_loss": 8.54957579576876e-05,
+    "best_val_loss": 8.54957579576876e-05,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\baseline\\best_model.pt"
+  },
+  {
+    "experiment": "heads_1",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 3,
+      "num_decoder_layers": 3,
+      "num_heads": 1,
+      "d_ff": 1024,
+      "dropout": 0.1,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.0025250814724131487,
+    "final_val_loss": 0.00013194019993534312,
+    "best_val_loss": 0.00013194019993534312,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\heads_1\\best_model.pt"
+  },
+  {
+    "experiment": "heads_8",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 3,
+      "num_decoder_layers": 3,
+      "num_heads": 8,
+      "d_ff": 1024,
+      "dropout": 0.1,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.0003996338218712481,
+    "final_val_loss": 5.950808190391399e-05,
+    "best_val_loss": 5.950808190391399e-05,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\heads_8\\best_model.pt"
+  },
+  {
+    "experiment": "dff_512",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 3,
+      "num_decoder_layers": 3,
+      "num_heads": 4,
+      "d_ff": 512,
+      "dropout": 0.1,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.0008238409009209136,
+    "final_val_loss": 9.696936467662454e-05,
+    "best_val_loss": 9.696936467662454e-05,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\dff_512\\best_model.pt"
+  },
+  {
+    "experiment": "dff_2048",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 3,
+      "num_decoder_layers": 3,
+      "num_heads": 4,
+      "d_ff": 2048,
+      "dropout": 0.1,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.0003410579629417043,
+    "final_val_loss": 5.87955455557676e-05,
+    "best_val_loss": 5.87955455557676e-05,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\dff_2048\\best_model.pt"
+  },
+  {
+    "experiment": "dropout_0.0",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 3,
+      "num_decoder_layers": 3,
+      "num_heads": 4,
+      "d_ff": 1024,
+      "dropout": 0.0,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.00016248100428128964,
+    "final_val_loss": 0.00013936476170783862,
+    "best_val_loss": 0.00013936476170783862,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\dropout_0.0\\best_model.pt"
+  },
+  {
+    "experiment": "dropout_0.3",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 3,
+      "num_decoder_layers": 3,
+      "num_heads": 4,
+      "d_ff": 1024,
+      "dropout": 0.3,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.002634773154568393,
+    "final_val_loss": 4.7884990635793656e-05,
+    "best_val_loss": 4.7884990635793656e-05,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\dropout_0.3\\best_model.pt"
+  },
+  {
+    "experiment": "layers_2",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 2,
+      "num_decoder_layers": 2,
+      "num_heads": 4,
+      "d_ff": 1024,
+      "dropout": 0.1,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.0009953955086530186,
+    "final_val_loss": 0.00012269322542124428,
+    "best_val_loss": 0.00012269322542124428,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\layers_2\\best_model.pt"
+  },
+  {
+    "experiment": "layers_4",
+    "config": {
+      "d_model": 256,
+      "num_encoder_layers": 4,
+      "num_decoder_layers": 4,
+      "num_heads": 4,
+      "d_ff": 1024,
+      "dropout": 0.1,
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "final_train_loss": 0.0003763079084819765,
+    "final_val_loss": 5.04222607560223e-05,
+    "best_val_loss": 5.04222607560223e-05,
+    "num_epochs": 10,
+    "checkpoint_path": "checkpoints\\layers_4\\best_model.pt"
+  }
+]
